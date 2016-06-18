@@ -25,6 +25,8 @@ public class SslChatLauncher {
             @Override
             public void onData(SocketIOClient client, ChatObject data, AckRequest ackRequest) {
                 server.getBroadcastOperations().sendEvent("chatevent", data);
+
+
             }
         });
 
